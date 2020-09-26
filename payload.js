@@ -87,7 +87,7 @@ function HACKUTILaddToolbarBtn(name, callback) {
 	HACKAVRORAtoolbar = DS.create({
 		DStype: 'window', position: 'auto', destroyOnClose: false, reqWidth: 340,
 		items: [
-			['title','Подвал МИРЭА нахуй','->',{DStype: 'window-button-close'}],
+			['title','Дополнительные возможности','->',{DStype: 'window-button-close'}],
 			{DStype: 'button',label: "Я всё сломал",listeners: { click: function() {window.location.reload(true);} } }
 		]
 	}).open();
@@ -106,7 +106,7 @@ function HACKUTILaddToolbarBtn(name, callback) {
 	HACKUTILaddToolbarBtn("Редактировать алгоритм", HACKAVRORAeditAlgorithm);
 	HACKUTILaddToolbarBtn("Выключть лекцию", HACKAVRORAfinishLection);
 	HACKUTILaddToolbarBtn("Вставить таблицу", HACKAVRORAPasteMyTableHere);
-	HACKUTILaddToolbarBtn("[ОПАСНО] Вернуть все задания", HACKAVRORAreturnAllTasks);
+	//HACKUTILaddToolbarBtn("[ОПАСНО] Вернуть все задания", HACKAVRORAreturnAllTasks);
 	
 	//document.body.appendChild(HACKAVRORAtoolbar.getObjectSelf());
 	
